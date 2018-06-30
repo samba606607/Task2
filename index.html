@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <video id="vid" src="video\videoplayback.mp4" autoplay controls="controls" loop muted>
+
+    </video>
+    <button type="button" name="button" onclick="pause()">Pause</button>
+    <script type="text/javascript">
+    function pause(){
+    var video=document.getElementById("vid");
+
+    video.pause();
+  }
+  </script>
+
+      <button type="button" name="button" onclick="play()">Play</button>
+      <script type="text/javascript">
+      function play(){
+      var video=document.getElementById("vid");
+
+      video.play();
+      }
+
+        </script>
+      <audio id="aud" src="audio\music.mp3" autoplay controls="controls">
+
+      </audio>
+      <button type="button" name="button" onclick="pause1()">Pause</button>
+        <button type="button" name="button" onclick="play1()">Play</button>
+      <script type="text/javascript">
+      function pause1(){
+      var aud=document.getElementById("aud");
+
+      aud.pause();
+    }
+
+        function play1(){
+        var aud=document.getElementById("aud");
+
+        aud.play();
+      }
+      </script>
+  </body>
+
+
+</html>
